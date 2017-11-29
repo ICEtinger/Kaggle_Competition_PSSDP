@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.neural_network import MLPRegressor
 
 def gini(actual, pred, cmpcol = 0, sortcol = 1):
       assert( len(actual) == len(pred) )
@@ -72,14 +71,3 @@ print("> > > The y values predicted by the Random Forest Regression are:\n",
 
 print("> > > The normalized gini coefficient is:\n", 
       gini_normalized(y2, predicted))
-
-
-# Create a random forest classifier.
-#clf2 = MLPRegressor(alpha=10)
-
-# Train the classifier to take the training features and learn how they relate
-# to the training classification
-#clf2.fit(features, y)
-
-#print("> > > The y values predicted by the Neural Net Regression are:\n",
-#      clf2.predict(features))
