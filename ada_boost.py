@@ -53,7 +53,7 @@ print("> > > The y values given are:\n",
       y)
 
 # Create a Ada Boost regressor.
-clf = AdaBoostRegressor()
+clf = AdaBoostRegressor(n_estimators = 200)
 
 # Train the classifier to take the training features and learn how they relate
 # to the training classification
